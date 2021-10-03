@@ -130,7 +130,7 @@
   }, {
     "id": "txstockapp",
     "name": "自选羊毛股",
-    "keys": ["signheader", "signkey", "taskheader", "taskkey", "userheader", "userkey", "wxtaskkey", "cash", "cashheader"],
+    "keys": ["signheader", "signkey", "taskheader", "taskkey", "userheader", "userkey", "wxtaskkey", "cash", "cashheader", "cowkey"],
     "settings": [{
       "id": "cash",
       "name": "提现开关:0,不自动提现;1，提现1元；5，提现5元",
