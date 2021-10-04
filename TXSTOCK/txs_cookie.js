@@ -21,7 +21,7 @@ const signkey = $request.headers['Cookie']
 }
 
 //签到
-if($request&&$request.url.indexOf("action=coupon")>=0) {
+if($request&&$request.url.indexOf("action=home_v2")>=0) {
    const signheader = $request.url.split('openid=')[1];
      if (signheader) $.setdata(signheader,'signheader')
      $.log(`[${jsname}] 获取signheader请求🎉: 成功,signheader: ${signheader}`)
@@ -43,7 +43,7 @@ if($request&&$request.url.indexOf("activity_usercenter")>=0) {
 
 
 //App任务
-if($request&&$request.url.indexOf("app_daily_task_config_utf8.json")>=0) {
+if($request&&$request.url.indexOf("app_passive_tasks_utf8.json")>=0) { 
    const taskheader = $request.url.split('&_appName=ios')[1];
      if (taskheader) $.setdata(taskheader,'taskheader')
      $.log(`[${jsname}] 获取taskheader请求🎉: 成功,taskheader: ${taskheader}`)
